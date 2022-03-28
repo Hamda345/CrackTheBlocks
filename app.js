@@ -126,7 +126,7 @@ function checkForCollisions() {
       scoreDisplay.innerHTML = score;
 
       //check if the user won 
-      if (blocks.length === 0) {
+      if (score == 15) {
         scoreDisplay.innerHTML = 'You won!';
         clearInterval(timerId);
         document.removeEventListener('keydown', moveUser);
